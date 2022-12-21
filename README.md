@@ -49,8 +49,25 @@ Are rather well-documented in the code, following the detailed development in Se
 
 - each obstacle must be provided together with a center (global obstacleCenters) relative to which it is star-convex and the radius of a ball about that center (global obstacleRadii), which is contained in the interior of the obstacle;
 
-- the boundary of each obstacle must be provided in the function barrierCurve (lines 682--698), in polar coordiantes (in the form $\rho=r(\theta)$), together with the derivative $\dd\rho/\dd\theta$ that must be provided in the function barrierCurveDeriv (lines 700--716);
+- the boundary of each obstacle must be provided in the function barrierCurve (lines 682--698), in polar coordiantes (in the form $\rho=r(\theta)$), together with the derivative $d\rho/d\theta$ that must be provided in the function barrierCurveDeriv (lines 700--716);
 
 - each obstacle needs to be provided with a clearance value (global obstacleClearances), to make sure that the inflated obstacles do not intersect;
 
 - the global values are set in advance (currently in section A of the code); the obstacle shapes are set in the barrierCurve functions themselves.
+
+
+
+# Provided Data Sets
+
+A number of data sets are provided under the /data/ sub-directory, which resulted from interesting simulation runs. Each data set may be loaded, and then visualized by the provided package, as follows:
+
+- load the data set in MATLAB
+
+- Run section F
+
+- Run section G
+
+- (optional) Run sections H/I/J
+
+- Run section K to produce a video.
+
