@@ -1,21 +1,21 @@
 # PnP_multi-agent_navigation
 
 
-# Dependencies
+## Dependencies
 This MATLAB package relies on Matt Jacobson's lcon2vert function package for handling polytopes. In order for the main .m file to run, you will need to include the ./polytopes/ subdirectory in the search tree.
 
 
-# Purpose
+## Purpose
 The provided code is an implementation of the PnP controller, as described in Section V of our paper "Plug-and-Play Cooperative Navigation: From Single-Agent Navigation Fields to Graph-Maintaining Distributed MAS Controllers". As such, it is only meant to cover planar sphere worlds and planar topological sphere worlds with star-convex obstacles. Moreover, the only implemented communication graphs are the N-path and the N-cycle (with some tweaks to the code).
 
 
-# INITIALIZATION
+## INITIALIZATION
 The simulation may be run with different initial parameter values, as documented in lines 5--75 in the code. While some of the code may apply in higher dimension, the code as is will only work in the plane, that is: the line
   stateDim=2;
 is not something you can easily alter without writing new code.
 
 
-# Executable code
+## Executable code
 The meaningful simulation parameters, assuming you keep the same geometry settings, are set in lines 18--25.
 
 A) Lines 31--110 set up the geometric environment (the workspace and obstacles).
